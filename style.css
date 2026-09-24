@@ -1,0 +1,715 @@
+/* =========================
+   BASIC SETTINGS
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: white;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+/* =========================
+   NAVBAR
+========================= */
+
+nav {
+    width: 100%;
+    height: 75px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 60px;
+
+    background-color: rgba(10, 10, 10, 0.95);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    z-index: 1000;
+
+    border-bottom: 1px solid #222;
+}
+
+nav h2 {
+    font-size: 26px;
+    font-weight: bold;
+
+    letter-spacing: 1px;
+}
+
+nav div {
+    display: flex;
+    align-items: center;
+
+    gap: 30px;
+}
+
+nav a {
+    position: relative;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 15px;
+    font-weight: 500;
+
+    padding: 8px 0;
+
+    transition: 0.3s;
+}
+
+nav a::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: 0;
+
+    width: 0;
+    height: 2px;
+
+    background-color: white;
+
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ccc;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+
+/* =========================
+   HOME
+========================= */
+
+/* =========================
+   HOME
+========================= */
+
+#home {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    text-align: left;
+
+    padding: 120px 8% 60px;
+
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.45),
+            rgba(0, 0, 0, 0.45)
+        ),
+        url("images/gym.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#home h1 {
+    font-size: 60px;
+    font-weight: 900;
+
+    max-width: 700px;
+
+    margin-bottom: 20px;
+
+    color: white;
+}
+
+#home p {
+    font-size: 20px;
+
+    color: #ccc;
+
+    margin-bottom: 30px;
+}
+
+#home a {
+    display: inline-block;
+
+    width: auto;
+
+    padding: 15px 35px;
+
+    background-color: white;
+    color: #111;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    border-radius: 5px;
+
+    transition: 0.3s;
+}
+
+#home a:hover {
+    background-color: #ccc;
+
+    transform: translateY(-3px);
+}
+
+
+/* =========================
+   GENERAL SECTIONS
+========================= */
+
+section {
+    padding: 100px 60px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+
+section > p {
+    max-width: 750px;
+    margin: 10px auto;
+
+    color: #ccc;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+/* =========================
+   ABOUT
+========================= */
+
+#about {
+    min-height: 600px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 60px;
+
+    background-color: #151515;
+
+    text-align: left;
+}
+
+.about-image {
+    width: 45%;
+    max-width: 550px;
+}
+
+.about-image img {
+    width: 100%;
+    height: 400px;
+
+    object-fit: cover;
+
+    border-radius: 12px;
+
+    display: block;
+}
+
+.about-text {
+    width: 45%;
+    max-width: 550px;
+}
+
+.about-text h2 {
+    font-size: 40px;
+
+    margin-bottom: 25px;
+}
+
+.about-text p {
+    color: #bbb;
+
+    line-height: 1.7;
+
+    margin-bottom: 15px;
+}
+
+.about-text a {
+    display: inline-block;
+
+    margin-top: 15px;
+
+    padding: 13px 25px;
+
+    background-color: white;
+    color: #111;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    border-radius: 5px;
+
+    transition: 0.3s;
+}
+
+.about-text a:hover {
+    background-color: #ccc;
+
+    transform: translateY(-3px);
+}
+
+
+/* =========================
+   PROGRAMS
+========================= */
+
+/* =========================
+   PROGRAMS
+========================= */
+
+/* =========================
+   PROGRAMS
+========================= */
+
+#programs {
+    background-color: #111;
+}
+
+.section-description {
+    color: #aaa;
+    margin-bottom: 35px;
+}
+
+.program-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 25px;
+}
+
+.program-card {
+    width: 260px;
+    min-height: 230px;
+
+    padding: 35px 25px;
+
+    background-color: #1b1b1b;
+
+    border: 1px solid #333;
+    border-radius: 12px;
+
+    transition: 0.3s;
+}
+
+.program-card:hover {
+    transform: translateY(-10px);
+
+    background-color: #242424;
+
+    border-color: #666;
+}
+
+.program-icon {
+    font-size: 45px;
+
+    margin-bottom: 20px;
+}
+
+.program-card h3 {
+    font-size: 21px;
+
+    margin-bottom: 15px;
+}
+
+.program-card p {
+    color: #aaa;
+
+    line-height: 1.6;
+}
+
+
+/* =========================
+   TRAINERS
+========================= */
+
+/* =========================
+   TRAINERS
+========================= */
+
+#trainers {
+    background-color: #151515;
+}
+
+#trainers > div {
+    display: inline-block;
+    vertical-align: top;
+
+    width: 240px;
+    min-height: 150px;
+
+    margin: 20px 10px;
+    padding: 30px 20px;
+
+    background-color: #1d1d1d;
+
+    border: 1px solid #333;
+    border-radius: 12px;
+
+    transition: 0.3s;
+}
+
+#trainers > div:hover {
+    transform: translateY(-10px);
+    background-color: #242424;
+}
+
+#trainers h3 {
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+#trainers p {
+    color: #aaa;
+    line-height: 1.5;
+}
+
+
+/* =========================
+   MEMBERSHIP
+========================= */
+
+/* =========================
+   MEMBERSHIP
+========================= */
+
+#membership {
+    background-color: #111;
+}
+
+#membership > div {
+    display: inline-block;
+    vertical-align: top;
+
+    width: 280px;
+    min-height: 320px;
+
+    margin: 15px;
+    padding: 35px 25px;
+
+    background-color: #1b1b1b;
+
+    border: 1px solid #333;
+    border-radius: 12px;
+
+    transition: 0.3s;
+}
+
+#membership > div:hover {
+    transform: translateY(-10px);
+    background-color: #242424;
+}
+
+#membership h3 {
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+#membership p {
+    margin: 12px 0;
+
+    color: #ccc;
+    line-height: 1.7;
+}
+
+#membership a {
+    display: inline-block;
+
+    margin-top: 15px;
+    padding: 12px 25px;
+
+    background-color: white;
+    color: #111;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    border-radius: 5px;
+
+    transition: 0.3s;
+}
+
+#membership a:hover {
+    background-color: #ccc;
+    transform: scale(1.05);
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+/* =========================
+   CONTACT
+========================= */
+
+/* =========================
+   CONTACT
+========================= */
+
+#contact {
+    background-color: #151515;
+}
+
+#contact h2 {
+    margin-bottom: 15px;
+}
+
+#contact > p {
+    margin-bottom: 25px;
+    color: #bbb;
+}
+
+#joinForm {
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#joinForm input,
+#joinForm select {
+    padding: 15px;
+
+    background-color: #1d1d1d;
+    color: white;
+
+    border: 1px solid #444;
+    border-radius: 6px;
+
+    font-size: 16px;
+}
+
+#joinForm button {
+    padding: 15px;
+
+    background-color: white;
+    color: #111;
+
+    border: none;
+    border-radius: 6px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+#joinForm button:hover {
+    background-color: #ccc;
+    transform: translateY(-2px);
+}
+
+#message {
+    margin-top: 20px;
+    color: #ccc;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    padding: 25px;
+
+    text-align: center;
+
+    background-color: #080808;
+
+    color: #777;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    nav {
+        height: auto;
+        padding: 20px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav div {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+
+    /* HOME */
+
+    #home {
+        justify-content: center;
+        text-align: center;
+        padding: 120px 25px 60px;
+    }
+
+    #home h1 {
+        font-size: 40px;
+    }
+
+    #home p {
+        font-size: 17px;
+    }
+
+
+    /* ABOUT */
+
+    #about {
+        flex-direction: column;
+        gap: 30px;
+        padding: 80px 25px;
+    }
+
+    .about-image,
+    .about-text {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .about-image img {
+        height: 300px;
+    }
+
+    .about-text {
+        text-align: center;
+    }
+
+    .about-text h2 {
+        font-size: 32px;
+    }
+
+
+    /* PROGRAMS */
+
+    .program-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .program-card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .program-icon {
+        font-size: 45px;
+    }
+
+
+    /* TRAINERS */
+
+    .trainer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .trainer-card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+
+    /* MEMBERSHIP */
+
+    .membership-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .membership-card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+
+    /* CONTACT */
+
+    #contact {
+        padding: 80px 25px;
+    }
+
+
+    /* FOOTER */
+
+    footer {
+        padding: 30px 20px;
+    }
+
+}
+    /* =========================
+   FOOTER
+========================= */
+
+footer {
+    padding: 35px 20px;
+
+    background-color: #0a0a0a;
+
+    text-align: center;
+
+    border-top: 1px solid #222;
+}
+
+footer h3 {
+    font-size: 24px;
+
+    margin-bottom: 10px;
+}
+
+footer p {
+    color: #888;
+
+    margin: 8px 0;
+
+    line-height: 1.5;
+}
